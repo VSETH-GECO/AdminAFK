@@ -40,9 +40,9 @@ $(document).ready(function() {
 		var format = $( "#format" ).val();
 		if(format == "Best of 1")
 		{
-			var add_mode = ['Ban ... Random', 'Ban x2, Ban x2 then Random', 'Ban x2 then Random', 'Random'];
+			var add_mode = ['A:Ban2x, B:Ban3x, A:Ban'];
 			var add_preview = [
-				['Team 1 BAN', 'Team 2 BAN', 'Team 1 BAN', 'Team 2 BAN', 'Team 1 BAN', 'Team 2 BAN', 'RANDOM'],
+				['Team 1 BAN', 'Team 1 BAN', 'Team 2 BAN', 'Team 2 BAN', 'Team 2 BAN', 'Team 1 BAN', 'RANDOM'],
 				['list-group-item-danger', 'list-group-item-danger', 'list-group-item-danger', 'list-group-item-danger', 'list-group-item-danger', 'list-group-item-danger', 'list-group-item-warning']
 			];
 		}
@@ -56,7 +56,7 @@ $(document).ready(function() {
 		}
 		else if(format == "Best of 3")
 		{
-			var add_mode = ['Ban x2, Pick x2, Ban x2 then Random', 'Ban x2, Ban x2, Pick x2 then Random', 'Ban x2, Pick x2 then Random', 'Ban x2, Ban x2 then Random', 'Pick x2 then Random', 'Random'];
+			var add_mode = ['A:Ban, B:Ban, A:Pick, B:Pick, A:Ban, B:Ban'];
 			var add_preview = [
 				['Team 1 BAN', 'Team 2 BAN', 'Team 1 PICK', 'Team 2 PICK', 'Team 1 BAN', 'Team 2 BAN', 'RANDOM'],
 				['list-group-item-danger', 'list-group-item-danger', 'list-group-item-primary', 'list-group-item-primary', 'list-group-item-danger', 'list-group-item-danger', 'list-group-item-warning']
@@ -92,7 +92,21 @@ $(document).ready(function() {
 		var format = $( "#format" ).val();
 		var mode = $( "#mode" ).val();
 		
-		if(mode == "Ban ... Random")
+		if(mode == "A:Ban2x, B:Ban3x, A:Ban")
+		{
+			var add_preview = [
+				['Team 1 BAN', 'Team 1 BAN', 'Team 2 BAN', 'Team 2 BAN', 'Team 2 BAN', 'Team 1 BAN', 'RANDOM'],
+				['list-group-item-danger', 'list-group-item-danger', 'list-group-item-danger', 'list-group-item-danger', 'list-group-item-danger', 'list-group-item-danger', 'list-group-item-warning']
+			];
+		}
+		else if(mode == "A:Ban, B:Ban, A:Pick, B:Pick, A:Ban, B:Ban")
+		{
+			var add_preview = [
+				['Team 1 BAN', 'Team 2 BAN', 'Team 1 PICK', 'Team 2 PICK', 'Team 1 BAN', 'Team 2 BAN', 'RANDOM'],
+				['list-group-item-danger', 'list-group-item-danger', 'list-group-item-primary', 'list-group-item-primary', 'list-group-item-danger', 'list-group-item-danger', 'list-group-item-warning']
+			];
+		}
+		else if(mode == "Ban ... Random")
 		{
 			var add_preview = [
 				['Team 1 BAN', 'Team 2 BAN', 'Team 1 BAN', 'Team 2 BAN', 'Team 1 BAN', 'Team 2 BAN', 'RANDOM'],
