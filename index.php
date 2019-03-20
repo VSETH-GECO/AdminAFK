@@ -84,6 +84,8 @@ if (isset($_SESSION['login']))
 			if(!isset($CONFIG['display_stream'])){$CONFIG['display_stream'] = "";}
 			display_navbar($current, $path_redirect, $path_redirect_disco, $path_redirect_index, $path_img, $level, $CONFIG['url_ebot'], $CONFIG['toornament_api'], $CONFIG['toornament_client_id'], $CONFIG['toornament_client_secret'], $CONFIG['toornament_id'], $CONFIG['display_connect'], $CONFIG['display_veto'], $CONFIG['display_bracket'], $CONFIG['display_participants'], $CONFIG['display_schedule'], $CONFIG['display_stream']);
 			?>
+			INDEX_HEADER
+			<div class="container">
 			<?php
 			echo "<br>";
 			if(isset($_SESSION['state']) && !empty($_SESSION['state']) && isset($_SESSION['message']) && !empty($_SESSION['message']))
@@ -103,9 +105,8 @@ if (isset($_SESSION['login']))
 			}
 			?>
 			</div>
-			<div class="container">
-				<iframe src="https://geco.ethz.ch/lan/tournaments/csgo"></iframe>
-			</div>
+			<br>
+			INDEX_BODY
 			<br><br>
 		</div>
 		<?php
