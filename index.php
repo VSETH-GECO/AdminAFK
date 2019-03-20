@@ -84,12 +84,6 @@ if (isset($_SESSION['login']))
 			if(!isset($CONFIG['display_stream'])){$CONFIG['display_stream'] = "";}
 			display_navbar($current, $path_redirect, $path_redirect_disco, $path_redirect_index, $path_img, $level, $CONFIG['url_ebot'], $CONFIG['toornament_api'], $CONFIG['toornament_client_id'], $CONFIG['toornament_client_secret'], $CONFIG['toornament_id'], $CONFIG['display_connect'], $CONFIG['display_veto'], $CONFIG['display_bracket'], $CONFIG['display_participants'], $CONFIG['display_schedule'], $CONFIG['display_stream']);
 			?>
-			<div class="container">
-				<br>
-				<h1 class="text-center">Welcome to ... !</h1>
-				<br>
-			</div>
-			<div class="container">
 			<?php
 			echo "<br>";
 			if(isset($_SESSION['state']) && !empty($_SESSION['state']) && isset($_SESSION['message']) && !empty($_SESSION['message']))
@@ -109,43 +103,8 @@ if (isset($_SESSION['login']))
 			}
 			?>
 			</div>
-			<br>
 			<div class="container">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-			<br>
-			<div class="container">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-			<br>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6">
-						<h3 class="text-center">Prize Pool</h3>
-						<ul class="list-group">
-						  <li class="list-group-item d-flex justify-content-between align-items-center">
-							<span class="badge badge-primary badge-pill">1st</span>
-							$500,000
-						  </li>
-						  <li class="list-group-item d-flex justify-content-between align-items-center">
-							<span class="badge badge-primary badge-pill">2nd</span>
-							$150,000
-						  </li>
-						  <li class="list-group-item d-flex justify-content-between align-items-center">
-							<span class="badge badge-primary badge-pill">3rd</span>
-							$100,000	
-						  </li>
-						</ul>
-					</div>
-					<div class="col-sm-6">
-						<h3 class="text-center">Useful links</h3>
-						<ul class="list-group">
-						  <a href="https://www.vitanombre.fr/" target="blank" class="list-group-item list-group-item-action">Rules</a>
-						  <a href="https://www.vitanombre.fr/" target="blank" class="list-group-item list-group-item-action">Bracket</a>
-						  <a href="https://www.vitanombre.fr/" target="blank" class="list-group-item list-group-item-action">eBot</a>
-						</ul>
-					</div>
-				</div>
+				<iframe src="https://geco.ethz.ch/lan/tournaments/csgo"></iframe>
 			</div>
 			<br><br>
 		</div>
