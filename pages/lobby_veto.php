@@ -136,7 +136,7 @@ echo '<html>';
 				display_navbar($current, $path_redirect, $path_redirect_disco, $path_redirect_index, $path_img, $level, $CONFIG['url_ebot'], $CONFIG['toornament_api'], $CONFIG['toornament_client_id'], $CONFIG['toornament_client_secret'], $CONFIG['toornament_id'], $CONFIG['display_connect'], $CONFIG['display_veto'], $CONFIG['display_bracket'], $CONFIG['display_participants'], $CONFIG['display_schedule'], $CONFIG['display_stream']);
 				echo '<div class="container">';
 					echo '<br>';
-					echo '<h1 class="text-center">Veto <span class="badge badge-primary">Béta</span></h1>';
+					echo '<h1 class="text-center">Veto</h1>';
 					echo '<br>';
 				echo '</div>';
 		}	
