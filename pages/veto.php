@@ -188,7 +188,7 @@ echo '<html>';
 						echo '<img id="de_overpass" src="../images/veto/de_overpass.jpg" class="map veto_map rounded special_veto" alt="Overpass">';
 						echo "<input id='de_overpass_hidden' name='de_overpass' type='hidden' value='yes'>";
 						//echo '<img id="de_cobblestone" src="../images/veto/de_cobblestone.jpg" class="map veto_ban rounded special_veto" alt="Cobblestone">';
-						//echo "<input id='de_cobblestone_hidden' name='de_cobblestone' type='hidden' value='no'>";
+						echo "<input id='de_cobblestone_hidden' name='de_cobblestone' type='hidden' value='no'>";
 						echo '<img id="de_nuke" src="../images/veto/de_nuke.jpg" class="map veto_map rounded special_veto" alt="Nuke">';
 						echo "<input id='de_nuke_hidden' name='de_nuke' type='hidden' value='yes'>";
 						echo '<img id="de_train" src="../images/veto/de_train.jpg" class="map veto_map rounded special_veto" alt="Train">';
