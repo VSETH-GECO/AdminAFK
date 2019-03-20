@@ -144,7 +144,11 @@ else
 if($format == "Best of 1")
 {
 	$format = "1";
-	if($mode == "Ban ... Random")
+	if($mode == "A:Ban2x, B:Ban3x, A:Ban")
+	{
+		$mode = "Ban 1/Ban 1/Ban 2/Ban 2/Ban 2/Ban 1/Random";
+	}
+	else if($mode == "Ban ... Random")
 	{
 		$mode = "Ban 1/Ban 2/Ban 1/Ban 2/Ban 1/Ban 2/Random";
 	}
@@ -202,7 +206,11 @@ else if($format == "Best of 2")
 else if($format == "Best of 3")
 {
 	$format = "3";
-	if($mode == "Ban x2, Pick x2, Ban x2 then Random")
+	if($mode == "A:Ban, B:Ban, A:Pick, B:Pick, A:Ban, B:Ban")
+	{
+		$mode = "Ban 1/Ban 2/Pick 1/Pick 2/Ban 1/Ban 2/Random";
+	}
+	else if($mode == "Ban x2, Pick x2, Ban x2 then Random")
 	{
 		$mode = "Ban 1/Ban 2/Pick 1/Pick 2/Ban 1/Ban 2/Random";
 	}
