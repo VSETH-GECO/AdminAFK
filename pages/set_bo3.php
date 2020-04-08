@@ -133,7 +133,8 @@ $season_display = check_season($BDD_EBOT);
 						<div class="col">
 							<label for="first_map">Map</label>
 							<select id="first_map" name="first_map" class="form-control">
-								<option selected>de_dust2</option>
+								<option value="tba" selected>mapveto</option>
+								<option>de_dust2</option>
 								<option>de_cache</option>
 								<option>de_inferno</option>
 								<option>de_mirage</option>
@@ -153,7 +154,8 @@ $season_display = check_season($BDD_EBOT);
 						<div class="col">
 							<label for="second_map">Map</label>
 							<select id="second_map" name="second_map" class="form-control">
-								<option selected>de_dust2</option>
+								<option value="tba" selected>mapveto</option>
+								<option>de_dust2</option>
 								<option>de_cache</option>
 								<option>de_inferno</option>
 								<option>de_mirage</option>
@@ -173,7 +175,8 @@ $season_display = check_season($BDD_EBOT);
 						<div class="col">
 							<label for="third_map">Map</label>
 							<select id="third_map" name="third_map" class="form-control">
-								<option selected>de_dust2</option>
+								<option value="tba" selected>mapveto</option>
+								<option>de_dust2</option>
 								<option>de_cache</option>
 								<option>de_inferno</option>
 								<option>de_mirage</option>

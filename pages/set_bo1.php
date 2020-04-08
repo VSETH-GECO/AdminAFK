@@ -149,7 +149,8 @@ $season_display = check_season($BDD_EBOT);
 							<div class="col">
 								<label for="map">Map</label>
 								<select id="map" name="map" class="form-control">
-									<option selected>de_dust2</option>
+									<option value="tba" selected>mapveto</option>
+									<option>de_dust2</option>
 									<option>de_cache</option>
 									<option>de_inferno</option>
 									<option>de_mirage</option>
